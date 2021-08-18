@@ -37,9 +37,12 @@ namespace MimicAPI.Controllers
         // -- /api/palavras (POST: id, nome, ativo, pontuacao, criacao)
         [Route("")]
         [HttpPost]
-        public ActionResult Cadastrar(Palavra palavra)
+        public ActionResult Cadastrar([FromBody]Palavra palavra)
         {
+
+            palavra.Criado = DateTime.Now;
             _banco.Palavras.Add(palavra);
+            _banco.SaveChanges();
 
             return Ok();
         }
@@ -47,10 +50,12 @@ namespace MimicAPI.Controllers
         // -- /api/palavras/1 (PUT: id, nome, ativo, pontuacao, criacao)
         [Route("{id}")]
         [HttpPut]
-        public ActionResult Atualizar(int id, Palavra palavra)
+        public ActionResult Atualizar(int id, [FromBody]Palavra palavra)
         {
             palavra.Id = id;
+            palavra.Atualizado = DateTime.Now;
             _banco.Palavras.Update(palavra);
+            _banco.SaveChanges();
 
             return Ok();
         }
@@ -60,7 +65,11 @@ namespace MimicAPI.Controllers
         [HttpDelete]
         public ActionResult Deletar(int id)
         {
-            _banco.Palavras.Remove(_banco.Palavras.Find(id));
+            var palavra = _banco.Palavras.Find(id);
+            palavra.Ativo = false;
+            palavra.Atualizado = DateTime.Now;
+            _banco.Palavras.Update(palavra);
+            _banco.SaveChanges();
 
             return Ok();
         }
