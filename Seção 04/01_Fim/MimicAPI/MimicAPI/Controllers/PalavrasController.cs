@@ -19,10 +19,10 @@ namespace MimicAPI.Controllers
             _banco = banco;
         }
 
-        //APP -- /api/palavras?data=2016-05-01
+        //APP -- /api/palavras
         [Route("")]
         [HttpGet]
-        public ActionResult ObterTodas(DateTime? data)
+        public ActionResult ObterTodas(DateTime? data, int? pagNumero, int? pagRegistroPag)
         {
             var item = _banco.Palavras.AsQueryable();
 
@@ -32,6 +32,11 @@ namespace MimicAPI.Controllers
             }
             //return new JsonResult(_banco.Palavras);
             return Ok(item);
+
+            if (pagNumero.HasValue)
+            {
+                item = item.Skip((pagNumero.Value - 1) * pagRegistroPag.Value).Take(pagRegistroPag.Value);
+            }
         }
 
         //WEB -- /api/palavras/1
