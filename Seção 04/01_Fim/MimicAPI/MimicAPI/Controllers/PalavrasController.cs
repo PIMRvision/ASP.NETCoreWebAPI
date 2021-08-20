@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MimicAPI.Database;
+using MimicAPI.Helpers;
 using MimicAPI.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +24,7 @@ namespace MimicAPI.Controllers
         //APP -- /api/palavras
         [Route("")]
         [HttpGet]
-        public ActionResult ObterTodas(DateTime? data, int? pagNumero, int? pagRegistroPag)
+        public ActionResult ObterTodas(DateTime? data, int? pagNumero, int? pagRegistro)
         {
             var item = _banco.Palavras.AsQueryable();
 
@@ -30,16 +32,30 @@ namespace MimicAPI.Controllers
             {
                 item = item.Where(a => a.Criado > data.Value || a.Atualizado > data.Value);
             }
-            //return new JsonResult(_banco.Palavras);
-            return Ok(item);
 
             if (pagNumero.HasValue)
             {
-                item = item.Skip((pagNumero.Value - 1) * pagRegistroPag.Value).Take(pagRegistroPag.Value);
+                var quantidadeTotalRegistros = item.Count();
+                item = item.Skip((pagNumero.Value - 1) * pagRegistro.Value).Take(pagRegistro.Value);
+
+                var paginacao = new Paginacao();
+                paginacao.NumeroPagina = pagNumero.Value;
+                paginacao.RegistroPorPagina = pagRegistro.Value;
+                paginacao.TotalRegistros = quantidadeTotalRegistros;
+                paginacao.TotalPaginas = (int) Math.Ceiling((double)quantidadeTotalRegistros / pagRegistro.Value);
+
+                Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(paginacao));
+
+                if (pagNumero > paginacao.TotalPaginas)
+                {
+                    return NotFound();
+                }
             }
+            //return new JsonResult(_banco.Palavras);
+            return Ok(item);
         }
 
-        //WEB -- /api/palavras/1
+        //WEB -- /api/palavras/1                                                                                                 
         [Route("{id}")]
         [HttpGet]
         public ActionResult Obter(int id)
