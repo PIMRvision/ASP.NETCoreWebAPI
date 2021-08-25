@@ -2,18 +2,20 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MimicAPI.Helpers;
-using MimicAPI.Models;
-using MimicAPI.Models.DTO;
-using MimicAPI.Repositories.Contracts;
+using MimicAPI.V1.Models;
+using MimicAPI.V1.Models.DTO;
+using MimicAPI.V1.Repositories.Contracts;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MimicAPI.Controllers
+namespace MimicAPI.V1.Controllers
 {
-    [Route("api/palavras")]
+    [ApiController]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class PalavrasController : ControllerBase
     {
         private readonly IPalavraRepository _repository;
