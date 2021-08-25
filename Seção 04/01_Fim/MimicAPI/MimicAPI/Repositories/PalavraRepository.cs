@@ -51,20 +51,17 @@ namespace MimicAPI.Repositories
         }
         public void Cadastrar(Palavra palavra)
         {
-            palavra.Criado = DateTime.Now;
             _banco.Palavras.Add(palavra);
             _banco.SaveChanges();
         }
         public void Atualizar(Palavra palavra)
         {
-            palavra.Atualizado = DateTime.Now;
             _banco.Palavras.Update(palavra);
             _banco.SaveChanges();
         }
         public void Deletar(int id)
         {
             var palavra = Obter(id);
-            palavra.Atualizado = DateTime.Now;
             palavra.Ativo = false;
             _banco.Palavras.Update(palavra);
             _banco.SaveChanges();
