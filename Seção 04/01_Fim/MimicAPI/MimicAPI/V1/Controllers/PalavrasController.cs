@@ -15,7 +15,7 @@ namespace MimicAPI.V1.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-    //[Route("api/[controller]")]
+    //[Route("api/[controller]")] //api/palavras?api-version=1.1
     [ApiVersion("1.0", Deprecated = true)]
     [ApiVersion("1.1")]
     public class PalavrasController : ControllerBase
