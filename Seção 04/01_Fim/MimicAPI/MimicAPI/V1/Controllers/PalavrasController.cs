@@ -15,7 +15,8 @@ namespace MimicAPI.V1.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-    [ApiVersion("1.0")]
+    [ApiVersion("1.0", Deprecated = true)]
+    [ApiVersion("1.1")]
     public class PalavrasController : ControllerBase
     {
         private readonly IPalavraRepository _repository;
@@ -28,6 +29,8 @@ namespace MimicAPI.V1.Controllers
         }
 
         //APP -- /api/palavras
+        [MapToApiVersion("1.0")]
+        [MapToApiVersion("1.1")]
         [HttpGet("", Name = "ObterTodas")]
         public ActionResult ObterTodas([FromQuery] PalavraUrlQuery query)
         {
@@ -76,7 +79,9 @@ namespace MimicAPI.V1.Controllers
             return lista;
         }
 
-        //WEB -- /api/palavras/1                                                                                                 
+        //WEB -- /api/palavras/1
+        [MapToApiVersion("1.0")]
+        [MapToApiVersion("1.1")]
         [HttpGet("{id}", Name = "ObterPalavra")]
         public ActionResult Obter(int id)
         {
@@ -100,6 +105,8 @@ namespace MimicAPI.V1.Controllers
         }
 
         // -- /api/palavras (POST: id, nome, ativo, pontuacao, criacao)
+        [MapToApiVersion("1.0")]
+        [MapToApiVersion("1.1")]
         [Route("")]
         [HttpPost]
         public ActionResult Cadastrar([FromBody] Palavra palavra)
@@ -123,6 +130,8 @@ namespace MimicAPI.V1.Controllers
         }
 
         // -- /api/palavras/1 (PUT: id, nome, ativo, pontuacao, criacao)
+        [MapToApiVersion("1.0")]
+        [MapToApiVersion("1.1")]
         [HttpPut("{id}", Name = "AtualizarPalavra")]
         public ActionResult Atualizar(int id, [FromBody] Palavra palavra)
         {
@@ -151,6 +160,7 @@ namespace MimicAPI.V1.Controllers
         }
 
         // -- /api/palavras/1 (DELETE)
+        [MapToApiVersion("1.1")]
         [HttpDelete("{id}", Name = "ExcluirPalavra")]
         public ActionResult Deletar(int id)
         {
