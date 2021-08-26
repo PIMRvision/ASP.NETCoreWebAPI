@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SUCsdOHinj4rFhY/7Kakuh0QM5FGNIK6HBLxBUy52FP3uZaOjvUcU8dNtr8JDoySzszlvPOEoVhlpYnTQAVaDw==",
+  "dgSpecHash": "gM/KL+S50Q/8aUzxMNnZ3urZjniPeEe70A/wIXnDRoEGJPpTzyyqf85Ko26E09+6pObY6d6D+yvVVqya/M93EQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 04\\01_Fim\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
   "expectedPackageFiles": [
@@ -163,6 +163,7 @@
     "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\microsoft.extensions.options\\2.2.0\\microsoft.extensions.options.2.2.0.nupkg.sha512",
     "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\2.2.0\\microsoft.extensions.options.configurationextensions.2.2.0.nupkg.sha512",
     "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\microsoft.extensions.options.dataannotations\\2.2.0\\microsoft.extensions.options.dataannotations.2.2.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.platformabstractions\\1.1.0\\microsoft.extensions.platformabstractions.1.1.0.nupkg.sha512",
     "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
     "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\microsoft.extensions.webencoders\\2.2.0\\microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
     "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.3.0\\microsoft.identitymodel.jsonwebtokens.5.3.0.nupkg.sha512",

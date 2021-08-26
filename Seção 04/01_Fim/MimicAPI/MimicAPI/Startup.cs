@@ -14,6 +14,8 @@ using AutoMapper;
 using MimicAPI.Helpers;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using MimicAPI.Helpers.Swagger;
+using Microsoft.Extensions.PlatformAbstractions;
+using System.IO;
 
 namespace MimicAPI
 {
@@ -61,6 +63,12 @@ namespace MimicAPI
                     Title = "MimicAPI - V1.0",
                     Version = "v1.0"
                 });
+
+                var CaminhoProjeto = PlatformServices.Default.Application.ApplicationBasePath;
+                var NomeProjeto = $"{PlatformServices.Default.Application.ApplicationName}.xml";
+                var CaminhoArquivoXMLComentario = Path.Combine(CaminhoProjeto, NomeProjeto);
+
+                cfg.IncludeXmlComments(CaminhoArquivoXMLComentario);
 
                 cfg.DocInclusionPredicate((docName, apiDesc) =>
                 {

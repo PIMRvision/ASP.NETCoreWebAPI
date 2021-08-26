@@ -16,3 +16,4 @@ C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 04\01_Fim\MimicAPI
 C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 04\01_Fim\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.dll
 C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 04\01_Fim\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.pdb
 C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 04\01_Fim\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.genruntimeconfig.cache
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 04\01_Fim\MimicAPI\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.xml
