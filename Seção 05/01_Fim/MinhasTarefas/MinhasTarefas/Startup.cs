@@ -3,8 +3,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MinhasTarefas.Database;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,7 +33,9 @@ namespace MinhasTarefas
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddDbContext<MinhasTarefasContext>(op => {
+                op.UseSqlite("Data Source=Database\\MinhasTarefas.db");
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
