@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MinhasTarefas.Models
 {
-    public class ApplicationUser:IdentityUser
+    public class ApplicationUser : IdentityUser
     {
-        public int FullName { get; set; }
+        public string FullName { get; set; }
 
         [ForeignKey("UsuarioId")]
         public virtual ICollection<Tarefa> Tarefas { get; set; }

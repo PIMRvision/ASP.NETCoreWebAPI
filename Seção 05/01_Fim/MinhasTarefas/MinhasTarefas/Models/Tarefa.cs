@@ -20,6 +20,7 @@ namespace MinhasTarefas.Models
 
         [ForeignKey("Usuario")]
         public string UsuarioID { get; set; }
+
         public virtual ApplicationUser Usuario { get; set; }
     }
 }

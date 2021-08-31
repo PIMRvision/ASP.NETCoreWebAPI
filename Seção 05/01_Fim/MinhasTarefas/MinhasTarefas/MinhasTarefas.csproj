@@ -5,6 +5,13 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20210830220458_BancoInicial.cs" />
+    <Compile Remove="Migrations\20210830220458_BancoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20210830223136_BancoInicial.cs" />
+    <Compile Remove="Migrations\20210830223136_BancoInicial.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
