@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefas.csproj": {}
+    "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefasAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefas.csproj": {
+    "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefasAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefas.csproj",
-        "projectName": "MinhasTarefas",
-        "projectPath": "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefas.csproj",
+        "projectUniqueName": "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefasAPI.csproj",
+        "projectName": "MinhasTarefasAPI",
+        "projectPath": "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\MinhasTarefasAPI.csproj",
         "packagesPath": "C:\\Users\\PauloIsaacMedeiros\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\PauloIsaacMedeiros\\Desktop\\ASP.NETCoreWebAPI\\Seção 05\\01_Fim\\MinhasTarefas\\MinhasTarefas\\obj\\",
         "projectStyle": "PackageReference",

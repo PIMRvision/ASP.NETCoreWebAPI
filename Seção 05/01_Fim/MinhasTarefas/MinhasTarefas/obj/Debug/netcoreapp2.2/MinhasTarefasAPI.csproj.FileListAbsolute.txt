@@ -1,0 +1,17 @@
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.deps.json
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.runtimeconfig.json
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.runtimeconfig.dev.json
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.dll
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.pdb
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.AssemblyInfoInputs.cache
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.AssemblyInfo.cs
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.csproj.CoreCompileInputs.cache
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.RazorAssemblyInfo.cache
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.RazorAssemblyInfo.cs
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.RazorTargetAssemblyInfo.cache
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.dll
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.pdb
+C:\Users\PauloIsaacMedeiros\Desktop\ASP.NETCoreWebAPI\Seção 05\01_Fim\MinhasTarefas\MinhasTarefas\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.genruntimeconfig.cache
