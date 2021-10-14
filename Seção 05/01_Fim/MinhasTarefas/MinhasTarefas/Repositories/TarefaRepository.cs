@@ -18,7 +18,7 @@ namespace MinhasTarefas.Repositories
 
         public List<Tarefa> Restauracao(ApplicationUser usuario, DateTime dataUltimaSincronizacao)
         {
-            var query = _banco.Tarefas.Where(a=>a.UsuarioID == usuario.Id).AsQueryable();
+            var query = _banco.Tarefas.Where(a => a.UsuarioID == usuario.Id).AsQueryable();
 
             if (dataUltimaSincronizacao == null)
             {
@@ -28,12 +28,31 @@ namespace MinhasTarefas.Repositories
             return query.ToList<Tarefa>();
         }
 
-        public void Sincronizacao(List<Tarefa> tarefas)
+        public List<Tarefa> Sincronizacao(List<Tarefa> tarefas)
         {
+            var tarefasNovas = tarefas.Where(a => a.IdTarefaApi == 0);
             // Cadastrar novos registros
+            if (tarefasNovas.Count() > 0)
+            {
+                foreach (var tarefa in tarefasNovas)
+                {
+                    _banco.Tarefas.Add(tarefa);
+                }
+            }
 
+            var tarefasExcluidasAtualizadas = tarefas.Where(a => a.IdTarefaApi != 0);
             //Atualização de registro (Excluido)
-            throw new NotImplementedException();
+            if (tarefasExcluidasAtualizadas.Count() > 0)
+            {
+                foreach (var tarefa in tarefasExcluidasAtualizadas)
+                {
+                    _banco.Tarefas.Update(tarefa);
+                }                
+            }
+
+            _banco.SaveChanges();
+
+            return tarefasNovas.ToList();
         }
     }
 }
